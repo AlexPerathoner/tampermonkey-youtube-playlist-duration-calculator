@@ -14,14 +14,14 @@ jobs:
     steps:
       - name: "checkout"
         uses: actions/checkout@v2
-      - name: Sync-Fork-action
-        uses: XueMoMo/Sync-Fork-action@v1.0.6
-        with:
-          upstream_repository: nrednav/youtube-playlist-duration-calculator
-          upstream_branch: master
-          target_branch: master
-          git_pull_args: --ff-only 
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Sync-Fork-action
+      #   uses: XueMoMo/Sync-Fork-action@v1.0.6
+      #   with:
+      #     upstream_repository: nrednav/youtube-playlist-duration-calculator
+      #     upstream_branch: master
+      #     target_branch: master
+      #     git_pull_args: --ff-only 
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build script
         run: |
           ./build.sh
