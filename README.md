@@ -15,4 +15,4 @@ Conversion of [nrednav](https://github.com/nrednav) [extension's](https://github
 
 ## Installation
 
-Only with tampermonkey. Just open the raw script in this repo: [https://raw.githubusercontent.com/AlexPerathoner/tampermonkey-youtube-playlist-duration-calculator/master/tampermonkey-script.user.js#bypass=true](https://raw.githubusercontent.com/AlexPerathoner/youtube-playlist-duration-calculator/master/tampermonkey-script.user.js#bypass=true)
+Only with tampermonkey. Just open the raw script in this repo: [https://raw.githubusercontent.com/AlexPerathoner/tampermonkey-youtube-playlist-duration-calculator/master/tampermonkey-script.user.js](https://raw.githubusercontent.com/AlexPerathoner/youtube-playlist-duration-calculator/master/tampermonkey-script.user.js)
