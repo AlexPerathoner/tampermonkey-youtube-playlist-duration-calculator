@@ -20,6 +20,7 @@ jobs:
           upstream_repository: nrednav/youtube-playlist-duration-calculator
           upstream_branch: master
           target_branch: master
+          git_pull_args: --ff-only 
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build script
         run: |
