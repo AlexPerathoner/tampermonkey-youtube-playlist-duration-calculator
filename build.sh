@@ -26,4 +26,4 @@ content_content=$(cat "$content_file")
 echo -e "$template_content\n\n$library_content\n\n$content_content\n\n})();" > "$output_file"
 
 # replace version in output file with latest release
-sed -i -e "s/TEMPLATE-VERSION/$LATEST_RELEASE/g" "$output_file"
+sed -i "s/TEMPLATE-VERSION/$LATEST_RELEASE/g" $output_file
