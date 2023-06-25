@@ -10,6 +10,13 @@ library_file="library.js"
 content_file="content.js"
 output_file="tampermonkey-script.user.js"
 
+echo $template_file
+echo $library_file
+echo $content_file
+echo $output_file
+
+
+
 # Read content
 template_content=$(cat "$template_file")
 library_content=$(cat "$library_file")

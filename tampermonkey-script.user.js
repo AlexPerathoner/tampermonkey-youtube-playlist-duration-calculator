@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Playlist Duration Calculator
 // @namespace    http://tampermonkey.net/
-// @version      v2.0.2
+// @version      2.0.2
 // @description  Calculate the total duration of a YouTube playlist and display it in an info box
 // @author       nrednav
 // @match        https://www.youtube.com/playlist*
