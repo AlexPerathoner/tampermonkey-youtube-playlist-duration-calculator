@@ -2,8 +2,8 @@
 name: Sync Fork
 
 on:
-  schedule:
-    - cron: '0 8 * * 1' # every monday at 8
+  # schedule: # should only be active if we pull changes automatically
+  #   - cron: '0 8 * * 1' # every monday at 8
   workflow_dispatch: # on button click
 
 jobs:
@@ -14,10 +14,8 @@ jobs:
     steps:
       - name: "checkout"
         uses: actions/checkout@v2
-      - uses: tgymnich/fork-sync@v1.8 # try pulling changes from original repo
-        with:
-          base: master
-          head: master
+      - name: Sync-Fork-action
+        uses: XueMoMo/Sync-Fork-action@v1.0.6
       - name: Build script
         run: |
           ./build.sh
