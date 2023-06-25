@@ -125,7 +125,7 @@ const getTimestamps = (videos) => {
   return videos.map((video) => {
     if (!video) return null;
 
-    const timestampContainer = video.querySelector(config.timestampContainer);
+    const timestampContainer = video.getElementsByClassName(config.timestampContainer)[1];
     if (!timestampContainer) return null;
 
     const formattedTimestamp = timestampContainer.innerText;

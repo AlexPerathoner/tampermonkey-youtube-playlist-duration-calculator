@@ -1,0 +1,27 @@
+
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # every monday at 8
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v2
+      - uses: tgymnich/fork-sync@v1.8 # try pulling changes from original repo
+        with:
+          base: master
+          head: master
+      - name: Build script
+        run: |
+          ./build.sh
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Update script'
+          add: 'tampermonkey-script.user.js --force'
