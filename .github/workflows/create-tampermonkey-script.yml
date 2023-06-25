@@ -2,15 +2,13 @@
 name: Sync Fork
 
 on:
+  workflow_dispatch: # on button click
   # schedule: # should only be active if we pull changes automatically
   #   - cron: '0 8 * * 1' # every monday at 8
-  workflow_dispatch: # on button click
 
 jobs:
   sync:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: "checkout"
         uses: actions/checkout@v2
@@ -27,5 +25,5 @@ jobs:
           ./build.sh
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Update script'
-          file_pattern: 'tampermonkey-script.user.js
+          commit_message: Update script
+          file_pattern: tampermonkey-script.user.js
