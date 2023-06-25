@@ -1,4 +1,4 @@
-# Youtube Playlist Duration Calculator
+# Tampermonkey Youtube Playlist Duration Calculator
 
 Conversion of [nrednav](https://github.com/nrednav) [extension's](https://github.com/nrednav/youtube-playlist-duration-calculator) into a Tampermonkey script.
 
@@ -15,4 +15,4 @@ Conversion of [nrednav](https://github.com/nrednav) [extension's](https://github
 
 ## Installation
 
-Only with tampermonkey. 
+Only with tampermonkey. Just open the raw script in this repo: [https://raw.githubusercontent.com/AlexPerathoner/tampermonkey-youtube-playlist-duration-calculator/master/tampermonkey-script.user.js#bypass=true](https://raw.githubusercontent.com/AlexPerathoner/youtube-playlist-duration-calculator/master/tampermonkey-script.user.js#bypass=true)
